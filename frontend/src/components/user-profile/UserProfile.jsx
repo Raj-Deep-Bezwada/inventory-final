@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './UserProfile.css'; // ✅ Import external CSS file for styling
+import './userprofile.css'; // ✅ Import external CSS file for styling
 
 function UserProfile() {
   const [products, setProducts] = useState([]);
