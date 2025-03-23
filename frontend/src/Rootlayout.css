@@ -1,0 +1,19 @@
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+    background-color: cadetblue;
+}
+
+
+.left,.right{
+    margin: 10px;
+}
+.left{
+    margin-left: 150px;
+}
+
+.right{
+    margin-right: 150px;
+}

@@ -1,0 +1,21 @@
+#root{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-color: cadetblue;
+    font-size: 0.8rem;
+}
+
+.productHeader{
+    display: flex;
+}
+.logoheader{
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 0.5rem; 
+}
+.productHeader .companyname{
+    margin-top: 9px;;
+}

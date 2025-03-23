@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "id": "0de4",
+      "username": "ok",
+      "password": "123456",
+      "email": "ok@gmail.com",
+      "mobile": "158741264"
+    },
+    {
+      "id": "6cd2",
+      "username": "4",
+      "email": "22501a0510@pvpsit.ac.in",
+      "mobile": "7013424402",
+      "profile": {
+        "0": {}
+      },
+      "password": "123"
+    }
+  ]
+}
