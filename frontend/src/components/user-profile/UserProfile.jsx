@@ -8,7 +8,7 @@ function UserProfile() {
 
   // ✅ Function to fetch all products
   const fetchProducts = () => {
-    fetch("http://localhost:4001/products")
+    fetch("https://inventory-final-gqnb.onrender.com/products")
       .then(res => res.json())
       .then(data => {
         if (Array.isArray(data.payload)) {
@@ -35,7 +35,7 @@ function UserProfile() {
   const addProduct = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://localhost:4001/products", {
+    const response = await fetch("https://inventory-final-gqnb.onrender.com/products", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newProduct),
@@ -66,7 +66,7 @@ function UserProfile() {
   const updateProduct = async (e) => {
     e.preventDefault();
 
-    const response = await fetch(`http://localhost:4001/products/${editProduct.name}`, {
+    const response = await fetch(`https://inventory-final-gqnb.onrender.com/products/${editProduct.name}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ count: editProduct.count, cost: editProduct.cost }),
@@ -86,7 +86,7 @@ function UserProfile() {
   const deleteProduct = async (productName) => {
     if (!window.confirm("Are you sure you want to delete this product?")) return;
 
-    const response = await fetch(`http://localhost:4001/products/${productName}`, {
+    const response = await fetch(`https://inventory-final-gqnb.onrender.com/products/${productName}`, {
       method: "DELETE",
     });
 
